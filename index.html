@@ -1062,7 +1062,7 @@ const lerp = (a,b,t) => a + (b-a)*t;
 function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('show'),2800); }
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 // Endereço do site publicado (fora do claude.ai a câmera ao vivo funciona)
-const LIVE_URL = '';
+const LIVE_URL = 'https://tattoo-studio-iota-five.vercel.app';
 const IN_FRAME = (()=>{ try{ return window.self!==window.top; }catch(e){ return true; } })();
 
 /* =========================================================
